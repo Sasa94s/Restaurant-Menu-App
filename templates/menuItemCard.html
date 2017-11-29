@@ -1,0 +1,30 @@
+<div class="col-sm-6 mb-4">
+    <div class="card bg-light">
+      <div class="card-header">
+        {{ menuItem['name'] }}
+      </div>
+      <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 justify-content-sm-start">
+                    <p class="card-text">{{ menuItem['description'] }}</p>
+                </div>
+                <div class="col-sm-2 offset-sm-4">
+                    <p class="card-text text-right">{{ menuItem['price'] }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 mt-2 justify-content-sm-start">
+                    <p class="card-text">{{ menuItem['course'] }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm mt-3 justify-content-end btn-group btn-group-sm" role="group" aria-label="Modify">
+                    <button type="button" class="btn btn-warning">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

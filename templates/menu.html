@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm mb-4">
+            <button type="button" class="btn btn-success">Add New Menu Item</button>
+        </div>
+    </div>
+    <p>You currently have {% if menuItems|length > 0 %} {{ menuItems|length }} {% else %} no {% endif %} menu items.</p>
+    <div class="container">
+        <div class="row">
+        {% for menuItem in menuItems %}
+                {% include 'menuItemCard.html' %}
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+<table class="table table-responsive-sm table-stripped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for restaurant in restaurants %}
+    <tr>
+        <th scope="row">{{ restaurant['id'] }}</th>
+        <td>{{ restaurant['name'] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
