@@ -2,20 +2,61 @@
 
 {% block content %}
 <div class="container">
-    <div class="row mb-2">
-        <h1>Edit Menu Item</h1>
-    </div>
-    <div class="row">
-        <div class="col-sm-2 text-center">
-            <p>Name:</p>
+    <form action="{{ url_for('edit_menu', restaurant_id=restaurant_id, menu_id=menu_id) }}" method="post">
+      <div class="form-group row">
+        <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputName" name="name" value="{{ request.form.name }}" placeholder="{{ menu.name }}">
         </div>
-        <div class="col-sm-3">
-            <input class="form-control" type="text" placeholder="Enter record">
+      </div>
+      <div class="form-group row">
+        <label for="inputDescription" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputDescription" name="description" value="{{ request.form.description }}" placeholder="{{ menu.description }}">
         </div>
-        <div class="btn-group col-sm-5">
-            <button type="submit" class="btn btn-primary">Edit</button>
-            <button type="submit" class="btn btn-info">Cancel</button>
+      </div>
+      <div class="form-group row">
+        <label for="inputDescription" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPrice" name="price" value="{{ request.form.price }}" placeholder="{{ menu.price }}">
         </div>
-    </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-legend col-sm-2">Course:</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios1" value="Appetizer" {% if menu['course'] == 'Appetizer' %}checked{% endif %}>
+                Appetizer
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios2" value="Entree" {% if menu['course'] == 'Entree' %}checked{% endif %}>
+                Entree
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios3" value="Dessert" {% if menu['course'] == 'Dessert' %}checked{% endif %}>
+                Dessert
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios4" value="Beverage" {% if menu['course'] == 'Beverage' %}checked{% endif %}>
+                Beverage
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
+      </div>
+    </form>
 </div>
 {% endblock %}

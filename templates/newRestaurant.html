@@ -5,16 +5,18 @@
     <div class="row mb-2">
         <h1>New Restaurant</h1>
     </div>
-    <div class="row">
-        <div class="col-sm-1 text-center">
-            <p>Name:</p>
+    <form action="{{ url_for('create_restaurant') }}" method="post">
+        <div class="form-group row">
+            <div class="col-sm-1 text-center">
+                <label for="inputName">Name:</label>
+            </div>
+            <div class="col-sm-8">
+                <input class="form-control" id="inputName" type="text" name="name" value="{{ request.form.name }}" placeholder="Enter record">
+            </div>
+            <div class="col-sm-1">
+                <button type="submit" class="btn btn-primary" href="#">Create</button>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <input class="form-control" type="text" placeholder="Enter record">
-        </div>
-        <div class="col-sm-4">
-            <button type="submit" class="btn btn-primary">Create</button>
-        </div>
-    </div>
+    </form>
 </div>
 {% endblock %}

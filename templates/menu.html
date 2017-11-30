@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row">
         <div class="col-sm mb-4">
-            <button type="button" class="btn btn-success">Add New Menu Item</button>
+            <a role="button" class="btn btn-success" href="{{ url_for('create_menu', restaurant_id=restaurant_id) }}">Add New Menu Item</a>
         </div>
     </div>
-    <p>You currently have {% if menuItems|length > 0 %} {{ menuItems|length }} {% else %} no {% endif %} menu items.</p>
+    <p>You currently have {% if menuItems %} {{ menuItems|length }} {% else %} no {% endif %} menu items.</p>
     <div class="container">
         <div class="row">
         {% for menuItem in menuItems %}

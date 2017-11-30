@@ -2,17 +2,23 @@
 
 {% block content %}
 <div class="container">
-    <form>
+    <form action="{{ url_for('create_menu', restaurant_id=restaurant_id) }}" method="post">
       <div class="form-group row">
         <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputName" placeholder="Name">
+          <input type="text" class="form-control" id="inputName" name="name" value="{{ request.form.name }}" placeholder="Name">
         </div>
       </div>
       <div class="form-group row">
         <label for="inputDescription" class="col-sm-2 col-form-label">Description</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputDescription" placeholder="Description">
+          <input type="text" class="form-control" id="inputDescription" name="description" value="{{ request.form.description }}" placeholder="Description">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputDescription" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPrice" name="price" value="{{ request.form.price }}" placeholder="Price">
         </div>
       </div>
       <fieldset class="form-group">
@@ -21,25 +27,25 @@
           <div class="col-sm-10">
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <input class="form-check-input" type="radio" name="course" id="gridRadios1" value="{{ request.form.course }}" checked>
                 Appetizer
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios2" value="{{ request.form.course }}">
                 Entree
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios3" value="{{ request.form.course }}">
                 Dessert
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <input class="form-check-input" type="radio" name="course" id="gridRadios4" value="{{ request.form.course }}">
                 Beverage
               </label>
             </div>
