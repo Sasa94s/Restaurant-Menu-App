@@ -502,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512044958127</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="enhancing static folder with font-awesome">
+      <created>1512045014629</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512045014629</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -541,7 +548,8 @@
     <MESSAGE value="Modifying project settings" />
     <MESSAGE value="Adding templates and forms" />
     <MESSAGE value="CRUD functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD functionality" />
+    <MESSAGE value="enhancing static folder with font-awesome" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhancing static folder with font-awesome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
