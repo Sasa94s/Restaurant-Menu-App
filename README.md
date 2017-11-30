@@ -8,6 +8,10 @@ This application deals with a `SQLite` database which has Restaurants, and Menu 
 
 This application shows list of restaurants, and their menu items. It has the ability to create, edit, or remove any of them as well.
 
+### Preview
+![Restaurant Menu App Preview](https://github.com/Sasa94s/Restaurant-Menu-App/blob/master/Preview1.JPG)
+![Restaurant Menu App Preview](https://github.com/Sasa94s/Restaurant-Menu-App/blob/master/Preview2.JPG)
+
 #### Prerequisites
 * Python 3
 * [VirtualBox](virtualbox.org)
