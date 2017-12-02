@@ -173,11 +173,11 @@ def getUserID(email):
 
 
 # Show Restaurants
-@app.route('/')
 @app.route('/restaurant')
+@app.route('/')
 def show_restaurants():
     restaurants = session.query(Restaurant).all()
-    return render_template('restaurants.html', restaurants=restaurants)
+    return render_template('restaurants.html', restaurants=restaurants, public='username' not in login_session)
 
 
 # JSON APIs for Restaurant Information
@@ -247,7 +247,7 @@ def delete_restaurant(restaurant_id):
 def show_menu(restaurant_id):
     restaurant = session.query(Restaurant).filter_by(id=restaurant_id).one()
     items = session.query(MenuItem).filter_by(restaurant_id=restaurant_id).all()
-    return render_template('menu.html', menuItems=items, restaurant=restaurant)
+    return render_template('menu.html', menuItems=items, restaurant=restaurant, public='username' not in login_session)
 
 
 # Create Menu Item for Restaurant

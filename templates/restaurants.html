@@ -2,24 +2,32 @@
 
 {% block content %}
 <div class="container">
+    {% if not public %}
     <div class="row">
         <div class="col-sm mb-4">
             <a role="button" class="btn btn-success" href="{{ url_for('create_restaurant') }}">Add New Restaurant</a>
         </div>
     </div>
+    {% endif %}
     <div class="row ">
         <table class="table table-responsive-sm table-stripped table-hover">
           <thead>
             <tr class="table-light">
-              <th scope="col">Actions</th>
+              {% if not public %}<th scope="col">Actions</th>{% endif %}
               <th scope="col">#</th>
               <th scope="col">Name</th>
             </tr>
           </thead>
           <tbody>
+          {% if public %}
+            {% for restaurant in restaurants %}
+                {% include 'publicRestaurantCard.html' %}
+            {% endfor %}
+          {% else %}
             {% for restaurant in restaurants %}
                 {% include 'restaurantCard.html' %}
             {% endfor %}
+          {% endif %}
           </tbody>
         </table>
     </div>
