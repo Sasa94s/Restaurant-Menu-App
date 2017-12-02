@@ -13,7 +13,7 @@ CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Restaurant Menu Application"
 
-engine = create_engine('sqlite:///restaurantmenu.db')
+engine = create_engine('sqlite:///restaurantmenuwithusers.db')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
@@ -101,6 +101,12 @@ def gconnect():
     login_session['picture'] = data['picture']
     login_session['email'] = data['email']
 
+    # if user doesn't exist create a new one
+    user_id = getUserID(login_session['email'])
+    if not user_id:
+        user_id = create_user(login_session)
+    login_session['user_id'] = user_id
+
     output = ''
     output += '<h1>Welcome, '
     output += login_session['username']
@@ -144,6 +150,27 @@ def gdisconnect():
         response.headers['Content-Type'] = 'application/json'
         return response
 
+# User Helper Functions
+
+def create_user(login_session):
+    newUser = User(name=login_session['username'], email=login_session[
+        'email'], picture=login_session['picture'])
+    session.add(newUser)
+    session.commit()
+    user = session.query(User).filter_by(email=login_session['email']).one()
+    return user.id
+
+def getUserInfo(user_id):
+    user = session.query(User).filter_by(id=user_id).one()
+    return user
+
+def getUserID(email):
+    try:
+        user = session.query(User).filter_by(email=email).one()
+        return user.id
+    except:
+        return None
+
 
 # Show Restaurants
 @app.route('/')
@@ -179,7 +206,7 @@ def create_restaurant():
     if 'username' not in login_session:
         return redirect('/login')
     if request.method == 'POST':
-        new_restaurant = Restaurant(name=request.form['name'])
+        new_restaurant = Restaurant(name=request.form['name'], user_id=login_session['user_id'])
         session.add(new_restaurant)
         session.commit()
         return redirect(url_for('show_restaurants'))
@@ -233,7 +260,8 @@ def create_menu(restaurant_id):
                            description=request.form['description'],
                            price=request.form['price'],
                            course=request.form['course'],
-                           restaurant_id=restaurant_id)
+                           restaurant_id=restaurant_id,
+                           user_id = login_session['user_id'])
         session.add(new_item)
         session.commit()
         return redirect(url_for('show_menu', restaurant_id=restaurant_id))

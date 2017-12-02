@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0faa75c7-7d65-4fe3-a3e7-6fbd902f7a7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_setup.py" afterPath="$PROJECT_DIR$/database_setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalProject.py" afterPath="$PROJECT_DIR$/finalProject.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lotsofmenus.py" afterPath="$PROJECT_DIR$/lotsofmenus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurantCard.html" afterPath="$PROJECT_DIR$/templates/restaurantCard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurants.html" afterPath="$PROJECT_DIR$/templates/restaurants.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,15 +22,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="finalProject.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="finalProject.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/finalProject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="409">
+              <caret line="103" column="4" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
-                <element signature="e#1023#4370#0" expanded="false" />
-                <element signature="e#4498#5682#0" expanded="false" />
+                <element signature="e#1630#1815#0" expanded="false" />
+                <element signature="e#4705#5888#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database_setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,48 +61,28 @@
       <file leaf-file-name="restaurants.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/restaurants.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+            <state relative-caret-position="420">
+              <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database_setup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database_setup.py">
+      <file leaf-file-name="restaurantCard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/restaurantCard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_secrets.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client_secrets.json">
+      <file leaf-file-name="lotsofmenus.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lotsofmenus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="93" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,18 +91,18 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="6" />
+            <state relative-caret-position="42">
+              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <file leaf-file-name="menuItemCard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/menuItemCard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="52" column="64" lean-forward="false" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+            <state relative-caret-position="483">
+              <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -117,6 +122,7 @@
     <findStrings>
       <find>json</find>
       <find>client</find>
+      <find>createuser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,7 +145,6 @@
         <option value="$PROJECT_DIR$/templates/newRestaurant.html" />
         <option value="$PROJECT_DIR$/templates/deleteRestaurant.html" />
         <option value="$PROJECT_DIR$/templates/deleteMenuItem.html" />
-        <option value="$PROJECT_DIR$/templates/restaurantCard.html" />
         <option value="$PROJECT_DIR$/templates/editRestaurant.html" />
         <option value="$PROJECT_DIR$/templates/editMenuItem.html" />
         <option value="$PROJECT_DIR$/templates/menu.html" />
@@ -147,12 +152,14 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/head.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/client_secrets.json" />
         <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/lotsofmenus.py" />
+        <option value="$PROJECT_DIR$/database_setup.py" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/templates/restaurantCard.html" />
         <option value="$PROJECT_DIR$/templates/restaurants.html" />
         <option value="$PROJECT_DIR$/finalProject.py" />
-        <option value="$PROJECT_DIR$/database_setup.py" />
       </list>
     </option>
   </component>
@@ -552,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512251316143</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="restricting access to pages that make crud operations">
+      <created>1512252114876</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1512252114876</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -611,7 +625,8 @@
     <MESSAGE value="Create a login page" />
     <MESSAGE value="setting up google connect" />
     <MESSAGE value="adding gdisconnect route and method" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding gdisconnect route and method" />
+    <MESSAGE value="restricting access to pages that make crud operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="restricting access to pages that make crud operations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -659,8 +674,8 @@
           <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
-            <element signature="e#1023#4370#0" expanded="false" />
-            <element signature="e#4498#5682#0" expanded="false" />
+            <element signature="e#1630#1815#0" expanded="false" />
+            <element signature="e#4705#5888#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -715,8 +730,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
-            <element signature="e#1023#4370#0" expanded="false" />
-            <element signature="e#4498#5682#0" expanded="false" />
+            <element signature="e#1630#1815#0" expanded="false" />
+            <element signature="e#4705#5888#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -741,8 +756,8 @@
           <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
-            <element signature="e#1023#4370#0" expanded="false" />
-            <element signature="e#4498#5682#0" expanded="false" />
+            <element signature="e#1630#1815#0" expanded="false" />
+            <element signature="e#4705#5888#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -789,8 +804,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
-            <element signature="e#1023#4370#0" expanded="false" />
-            <element signature="e#4498#5682#0" expanded="false" />
+            <element signature="e#1630#1815#0" expanded="false" />
+            <element signature="e#4705#5888#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -816,8 +831,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
-            <element signature="e#1023#4370#0" expanded="false" />
-            <element signature="e#4498#5682#0" expanded="false" />
+            <element signature="e#1630#1815#0" expanded="false" />
+            <element signature="e#4705#5888#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -880,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/restaurantCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/editRestaurant.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -905,14 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="47" column="107" lean-forward="false" selection-start-line="47" selection-start-column="107" selection-end-line="47" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lotsofmenus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,14 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/flask/globals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -973,14 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menuItemCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -991,37 +975,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menuItemCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/restaurantCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/restaurants.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+        <state relative-caret-position="420">
+          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lotsofmenus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/finalProject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="409">
+          <caret line="103" column="4" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
-            <element signature="e#1023#4370#0" expanded="false" />
-            <element signature="e#4498#5682#0" expanded="false" />
+            <element signature="e#1630#1815#0" expanded="false" />
+            <element signature="e#4705#5888#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
