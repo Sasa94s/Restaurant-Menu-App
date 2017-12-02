@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0faa75c7-7d65-4fe3-a3e7-6fbd902f7a7d" name="Default" comment="Obtaining credentials for existing user">
+    <list default="true" id="0faa75c7-7d65-4fe3-a3e7-6fbd902f7a7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurantCard.html" afterPath="$PROJECT_DIR$/templates/restaurantCard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurants.html" afterPath="$PROJECT_DIR$/templates/restaurants.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -570,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512257364794</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Obtaining credentials for existing user">
+      <created>1512257395897</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1512257395897</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
