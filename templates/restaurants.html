@@ -8,7 +8,20 @@
         </div>
     </div>
     <div class="row ">
-        {% include 'restaurantCard.html' %}
+        <table class="table table-responsive-sm table-stripped table-hover">
+          <thead>
+            <tr class="table-light">
+              <th scope="col">Actions</th>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for restaurant in restaurants %}
+                {% include 'restaurantCard.html' %}
+            {% endfor %}
+          </tbody>
+        </table>
     </div>
 </div>
 {% endblock %}

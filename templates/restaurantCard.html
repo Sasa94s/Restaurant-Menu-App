@@ -1,29 +1,16 @@
-<table class="table table-responsive-sm table-stripped table-hover">
-  <thead>
-    <tr class="table-light">
-      <th scope="col">Actions</th>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for restaurant in restaurants %}
-    <tr>
-        <td>
-            <div class="col-sm-5">
-                <a role="button" href="{{ url_for('delete_restaurant', restaurant_id=restaurant['id']) }}" class="close" aria-label="Delete">
-                    <span class="fa fa-close "></span>
-                </a>
-            </div>
-            <div class="col-sm-5">
-                <a role="button" href="{{ url_for('edit_restaurant', restaurant_id=restaurant['id']) }}" class="close" aria-label="Edit">
-                    <span class="fa fa-edit fa-th"></span>
-                </a>
-            </div>
-        </td>
-        <th scope="row"><a role="button" class="text-dark nav-link" href="{{ url_for('show_menu', restaurant_id=restaurant['id']) }}">{{ restaurant['id'] }}</a></th>
-        <td><a role="button" class="text-dark nav-link" href="{{ url_for('show_menu', restaurant_id=restaurant['id']) }}">{{ restaurant['name'] }}</a></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<tr>
+    <td>
+        <div class="col-sm-5">
+            <a role="button" href="{{ url_for('delete_restaurant', restaurant_id=restaurant['id']) }}" class="close" aria-label="Delete">
+                <span class="fa fa-close "></span>
+            </a>
+        </div>
+        <div class="col-sm-5">
+            <a role="button" href="{{ url_for('edit_restaurant', restaurant_id=restaurant['id']) }}" class="close" aria-label="Edit">
+                <span class="fa fa-edit fa-th"></span>
+            </a>
+        </div>
+    </td>
+    <th scope="row"><a role="button" class="text-dark nav-link" href="{{ url_for('show_menu', restaurant_id=restaurant['id']) }}">{{ restaurant['id'] }}</a></th>
+    <td><a role="button" class="text-dark nav-link" href="{{ url_for('show_menu', restaurant_id=restaurant['id']) }}">{{ restaurant['name'] }}</a></td>
+</tr>

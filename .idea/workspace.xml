@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0faa75c7-7d65-4fe3-a3e7-6fbd902f7a7d" name="Default" comment="">
+    <list default="true" id="0faa75c7-7d65-4fe3-a3e7-6fbd902f7a7d" name="Default" comment="Obtaining credentials for existing user">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_setup.py" afterPath="$PROJECT_DIR$/database_setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalProject.py" afterPath="$PROJECT_DIR$/finalProject.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lotsofmenus.py" afterPath="$PROJECT_DIR$/lotsofmenus.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurantCard.html" afterPath="$PROJECT_DIR$/templates/restaurantCard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurants.html" afterPath="$PROJECT_DIR$/templates/restaurants.html" />
     </list>
@@ -566,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512252114876</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Obtaining credentials for existing user">
+      <created>1512257364794</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1512257364794</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -626,7 +630,8 @@
     <MESSAGE value="setting up google connect" />
     <MESSAGE value="adding gdisconnect route and method" />
     <MESSAGE value="restricting access to pages that make crud operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="restricting access to pages that make crud operations" />
+    <MESSAGE value="Obtaining credentials for existing user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Obtaining credentials for existing user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
