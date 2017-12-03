@@ -9,6 +9,77 @@
 <script src="//apis.google.com/js/platform.js?onload=start"> </script>
 <!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
 
+{% endblock %}
+
+
+
+{% block header %}
+{{ super() }}
+<div id="result"></div>
+<!--FACEBOOK SIGN IN -->
+
+<div class="fb-login-button"
+         data-max-rows="1"
+         data-size="large"
+         data-button-type="continue_with"
+         data-show-faces="false"
+         data-auto-logout-link="false"
+         data-use-continue-as="false">
+    <fb:login-button
+      scope="public_profile,email"
+      onlogin="sendTokenToServer();">
+    </fb:login-button>
+</div>
+
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1975932029330421',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+};
+
+(function(d, s, id){
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) {return;}
+ js = d.createElement(s); js.id = id;
+ js.src = "https://connect.facebook.net/en_US/sdk.js";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+function sendTokenToServer() {
+  var access_token = FB.getAuthResponse()['accessToken'];
+  console.log(access_token)
+  console.log('Welcome!  Fetching your information.... ');
+  FB.api('/me', function (response) {
+      console.log('Successful login for: ' + response.name);
+      $.ajax({
+          type: 'POST',
+          url: '/fbconnect?state={{STATE}}',
+          processData: false,
+          data: access_token,
+          contentType: 'application/octet-stream; charset=utf-8',
+          success: function (result) {
+              // Handle or verify the server response if necessary.
+              if (result) {
+                  $('#result').html('Login Successful!</br>' + result + '</br>Redirecting...')
+                      .setTimeout(function () {
+                          window.location.href = "/restaurants";
+                      }, 4000);
+              } else {
+                  $('#result').html('Failed to make a server-side call. Check your configuration and console.');
+              }
+          }
+      });
+  });
+}
+<!--END FACEBOOK SIGN IN -->
+
+
+</script>
+
 <script>
 function signInCallback(authResult) {
     if(authResult['code']){
@@ -27,7 +98,7 @@ function signInCallback(authResult) {
                 if(result){
                     $('#result').text(`Login Successful!</br>${result}</br>Redirecting...`);
                     setTimeout(function () {
-                        window.location.href = "/restaurant";
+                        window.location.href = "/restaurants";
                     }, 4000);
                 } else if(authResult['error']){
                     console.log(`There was an error: ${authResult['error']}`)
@@ -39,15 +110,10 @@ function signInCallback(authResult) {
     }
 }
 </script>
-{% endblock %}
+<!-- END FACEBOOK SIGN IN BUTTON -->
 
-
-
-{% block header %}
-{{ super() }}
-<div id="result"></div>
 <!-- GOOGLE PLUS SIGN IN BUTTON-->
-<div id="signinButton">
+<div id="signinButton" class="justify-content-end">
   <span class="g-signin"
     data-scope="openid email"
     data-clientid="808796072062-t19eqv2g1lqcbln94s655c2o9vm0gpcp.apps.googleusercontent.com"
