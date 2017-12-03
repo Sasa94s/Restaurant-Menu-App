@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0faa75c7-7d65-4fe3-a3e7-6fbd902f7a7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalProject.py" afterPath="$PROJECT_DIR$/finalProject.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="-50">
+              <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -39,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finalProject.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="finalProject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalProject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
+            <state relative-caret-position="105">
               <caret line="198" column="26" lean-forward="false" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
@@ -116,8 +115,8 @@
         <option value="$PROJECT_DIR$/templates/publicMenuItemCard.html" />
         <option value="$PROJECT_DIR$/templates/menuItemCard.html" />
         <option value="$PROJECT_DIR$/fb_client_secrets.json" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/finalProject.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
@@ -538,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512262311604</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="adding fb login">
+      <created>1512293367481</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1512293367481</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,7 +596,8 @@
     <MESSAGE value="Obtaining credentials for existing user" />
     <MESSAGE value="protecting menu pages" />
     <MESSAGE value="viewing menu creator" />
-    <option name="LAST_COMMIT_MESSAGE" value="viewing menu creator" />
+    <MESSAGE value="adding fb login" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding fb login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -972,23 +979,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finalProject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
+        <state relative-caret-position="105">
           <caret line="198" column="26" lean-forward="false" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
             <element signature="e#1038#4583#0" expanded="false" />
             <marker date="1512292787854" expanded="false" signature="4706:5538" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
